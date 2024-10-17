@@ -67,5 +67,15 @@ namespace api.Controllers
 
         return Ok(stockModel.ToStockDto());
       }
+      [HttpDelete]
+      public IActionResult Delete([FromBody] int id){
+        var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == id);
+        if(stockModel == null){
+          return NotFound();
+        }
+        _context.Stocks.Remove(stockModel);
+      _context.SaveChanges();
+      return Ok(stockModel.ToStockDto());
+      }
     }
 }
