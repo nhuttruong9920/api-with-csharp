@@ -47,10 +47,11 @@ namespace api.Controllers
         return CreatedAtAction(nameof(GetById), new { id = stockModel.Id }, stockModel.ToStockDto());
       }
 
-      [HttpPut("{id}")]
-      public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockRequestDto updateDto)
+      [HttpPut]
+      public IActionResult Update([FromBody] UpdateStockRequestDto updateDto)
       {
-        var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == id);
+        var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == updateDto.StockId);
+
         if(stockModel == null){
           return NotFound();
         }
