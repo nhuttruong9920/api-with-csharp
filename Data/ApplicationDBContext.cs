@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace api.data
+namespace api.Data
 {
     public class ApplicationDBContext : DbContext
     {
@@ -14,7 +14,7 @@ namespace api.data
 
       }
 
-      public DbSet<Stocks> Stocks { get; set; }
+      public DbSet<Stock> Stocks { get; set; }
       public DbSet<Comment> Comments{ get; set; }
     }
 }

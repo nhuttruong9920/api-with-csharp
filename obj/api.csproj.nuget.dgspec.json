@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\api.csproj": {}
+    "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\api.csproj": {
+    "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\api.csproj",
+        "projectPath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\api.csproj",
         "packagesPath": "C:\\Users\\truongpn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\obj\\",
+        "outputPath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",

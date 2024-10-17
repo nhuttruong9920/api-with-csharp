@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yzIbGnUdSUgIAot3ZQuqaHppxooV4RzAvtF6jkS+bvise+WvvSgkdmRRF0kHdqxuoefjowYdnOvHpUI4iRRdUA==",
+  "dgSpecHash": "Xji8CcIellms1dtPOMbbHXnVKx8xYtNRMTorPMRxKccQKoHAhy26c06pwtVo1hxDtSb1ITua7e5Ungc+VrlHdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\new project\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\truongpn\\OneDrive - VIETMAP\\Documents\\repo\\C#\\finshark\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\truongpn\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\truongpn\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using api.data;
+using api.Data;
 
 #nullable disable
 
 namespace api.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20241017041223_init")]
+    [Migration("20241017070133_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -54,7 +54,7 @@ namespace api.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("api.Models.Stocks", b =>
+            modelBuilder.Entity("api.Models.Stock", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -90,14 +90,14 @@ namespace api.Migrations
 
             modelBuilder.Entity("api.Models.Comment", b =>
                 {
-                    b.HasOne("api.Models.Stocks", "Stock")
+                    b.HasOne("api.Models.Stock", "Stock")
                         .WithMany("Comments")
                         .HasForeignKey("StockId");
 
                     b.Navigation("Stock");
                 });
 
-            modelBuilder.Entity("api.Models.Stocks", b =>
+            modelBuilder.Entity("api.Models.Stock", b =>
                 {
                     b.Navigation("Comments");
                 });
