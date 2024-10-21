@@ -33,7 +33,7 @@ namespace api.Controllers
 
         if(stock == null)
         {
-          return NotFound();
+          return NotFound(new { Message = "Stock not found" });
         }
         return Ok(stock.ToStockDto());
       }
@@ -53,7 +53,7 @@ namespace api.Controllers
         var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == updateDto.StockId);
 
         if(stockModel == null){
-          return NotFound();
+          return NotFound(new { Message = "Stock not found" });
         }
 
         stockModel.Symbol = updateDto.Symbol;
@@ -71,11 +71,11 @@ namespace api.Controllers
       public IActionResult Delete([FromBody] int id){
         var stockModel = _context.Stocks.FirstOrDefault(s => s.Id == id);
         if(stockModel == null){
-          return NotFound();
+          return NotFound(new { Message = "Stock not found" });
         }
         _context.Stocks.Remove(stockModel);
-      _context.SaveChanges();
-      return Ok(stockModel.ToStockDto());
+         _context.SaveChanges();
+        return Ok(new { Message = "Delete success!" });
       }
     }
 }
