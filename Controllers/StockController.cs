@@ -62,6 +62,7 @@ namespace api.Controllers
 
         return Ok(stockModel.ToStockDto());
       }
+      
       [HttpDelete]
       public async Task<IActionResult> Delete([FromBody] int id){
         var stockModel = await _stockRepo.DeleteAsync(id);
